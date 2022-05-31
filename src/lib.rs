@@ -39,6 +39,7 @@ pub type VAddr = u64;
 // trait's relocate method. Library user can decide
 // how to handle each relocation
 #[allow(dead_code)]
+#[derive(Debug)]
 pub struct RelocationEntry {
     pub rtype: RelocationType,
     pub offset: u64,
